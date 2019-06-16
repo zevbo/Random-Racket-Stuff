@@ -2,7 +2,10 @@
 (provide
  enter-and-solve)
 
-;; board is a vector unless otherwise specified
+;; Board is a vector unless otherwise specified
+;; Each cell is a list of all the possible values of a cell
+;; If a cell has just one possibility, then it is known
+;; If it has only the possibility zero, then we have not calculated its possibilities yet
 
 (define UNDO_VALUE "undo")
 (define NON_REPLACABLE_STRING_CODES (list "n" "~" " "))
