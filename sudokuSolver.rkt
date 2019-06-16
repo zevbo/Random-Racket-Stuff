@@ -1,6 +1,10 @@
 #lang racket
-(provide
- enter-and-solve)
+
+;; Welcome to the SUDOKU SOLVER!!!!
+;; It's very simple, you input a sudoku board (0 for blanks, undo if you mess up)
+;; Then, it will print out a solved board
+;; The sequence will automatically start when you hit run
+;; To start in manually call (enter-and-solve)
 
 ;; Board is a vector unless otherwise specified
 ;; Each cell is a list of all the possible values of a cell
