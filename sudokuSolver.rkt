@@ -35,7 +35,7 @@
 (define (get-row-positions board row)       (map (λ (column) (cons row column)) (range 0 9)))
 (define (get-column-positions board column) (map (λ (row)    (cons row column)) (range 0 9)))
 
-;; Square groups:
+;;Square groups:
 ;;0|1|2
 ;;-----
 ;;3|4|5
@@ -46,7 +46,7 @@
   (define top-left-column (* (modulo   square-number 3) 3))
   (map
    (λ (value-on)
-     ;; Moves through ther square like so:
+     ;; Moves through the square like so:
      ;; 0 1 2
      ;; 3 4 5
      ;; 6 7 8
